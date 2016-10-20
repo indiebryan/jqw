@@ -66,8 +66,6 @@ public abstract class MovableEntity extends DrawableEntity {
 				moving = false;
 			}
 		}
-		System.out.println("Position: (" + x + "," + y + ") Direction: (" + direction.x + "," + direction.y + ")  Speed: " +
-				speed + "     Delta: " + delta);
 	}
 	
 	private Vector2f calculateDirection() {
@@ -77,7 +75,6 @@ public abstract class MovableEntity extends DrawableEntity {
 		float totalDistance = xD + yD;
 		dir.x = xD / totalDistance;
 		dir.y = yD / totalDistance;
-		System.out.println("xV: " + dir.x + "   yV: " + dir.y);
 		if (x > location.x)
 			dir.x *= -1;
 		if (y > location.y)

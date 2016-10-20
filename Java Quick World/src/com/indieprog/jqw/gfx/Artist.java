@@ -29,7 +29,7 @@ public class Artist {
 	public static void BeginSession() {
 		Display.setTitle("Indie Programmer :: Support this game at Patreon.com/IndieProgrammer");
 		try {
-			Display.setDisplayMode(new DisplayMode(1200, 628));
+			Display.setDisplayMode(new DisplayMode(SCREENWIDTH, SCREENHEIGHT));
 			Display.create();
 		} catch (LWJGLException e) {
 			e.printStackTrace();

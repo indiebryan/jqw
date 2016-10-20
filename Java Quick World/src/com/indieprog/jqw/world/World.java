@@ -25,7 +25,7 @@ public class World {
 	
 	public void spawnCreature(MovableEntity entity) {
 		creatures.add(entity);
-		entity.patrol(new Vector2f(200, 232));
+		//entity.patrol(new Vector2f(200, 232));
 	}
 	
 	public void update(int delta) {
