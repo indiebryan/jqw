@@ -11,7 +11,7 @@ import com.indieprog.jqw.math.Vector2f;
 public abstract class MovableEntity extends DrawableEntity {
 	
 	private boolean moving, patrolling;
-	private float speed;
+	protected float speed;
 	private Vector2f location, direction, patrolOrigin;
 	
 	public MovableEntity(int x, int y) {

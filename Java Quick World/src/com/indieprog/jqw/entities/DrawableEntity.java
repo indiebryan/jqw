@@ -7,6 +7,7 @@ import static com.indieprog.jqw.gfx.Artist.TILESIZE;
 import org.newdawn.slick.opengl.Texture;
 
 import com.indieprog.jqw.gfx.Artist;
+import com.indieprog.jqw.math.Vector2f;
 
 /**
  * An abstract class to be extended by any entity which needs to be drawn to the screen.  
@@ -70,6 +71,10 @@ public abstract class DrawableEntity implements Entity {
 	 */
 	public void setTexture(String textureName) {
 		this.texture = QuickLoad(textureName);
+	}
+	
+	public Vector2f getPosition() {
+		return new Vector2f(x, y);
 	}
 	
 }
